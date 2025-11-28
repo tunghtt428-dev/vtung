@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>cuathongminh.vn - Cửa Thông Minh</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="image/logo cua.jpg" alt="SmartDoor" class="logo-img">
+                <span class="brand">cuathongminh.vn</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>   
+                    <li><a href="#">Công nghệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="search-toggle">🔍</button>
+                <button class="outline">Đăng nhập</button>
+                <button class="primary">Đăng ký</button>
+                <a class="cart" href="cart.html">🛒 <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-left">
+                <h1>Cửa Thông Minh – <span class="highlight">An Toàn</span> – Hiện Đại</h1>
+                <p class="lead">Giải pháp tự động hoá, kết nối app, vân tay và cảnh báo an ninh cho ngôi nhà thông minh của bạn.</p>
+                <div class="hero-cta">
+                    <a class="primary" href="products.html">Khám phá ngay</a>
+                    <a class="outline" href="#features">Tính năng</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="image/thong minh.jpg" alt="Cửa thông minh" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản phẩm nổi bật -->
+    <section class="section container">
+        <h2 class="section-title">Sản phẩm nổi bật</h2>
+        <div class="product-grid" id="featured-products">
+            <!-- 6–8 card mẫu (thay bằng dữ liệu thật) -->
+            <div class="product-card">
+                <img src="image/cam bien.jpg" alt="">
+                <h3>Cửa kính cảm biến</h3>
+                <p class="price">8.500.000 ₫</p>
+                <div class="card-actions">
+                    <a href="product.html?id=1" class="btn small">Xem chi tiết</a>
+                    <button class="btn small primary" onclick="addToCart('Cửa kính cảm biến',8500000,'assets/images/pro1.jpg')">Thêm vào giỏ</button>
+</div>
+            </div>
+
+            <div class="product-card">
+                <img src="image/cuacuon.jpg" alt="">
+                <h3>Cửa cuốn thông minh</h3>
+                <p class="price">12.500.000 ₫</p>
+                <div class="card-actions">
+                    <a href="product.html?id=2" class="btn small">Xem chi tiết</a>
+                    <button class="btn small primary" onclick="addToCart('Cửa cuốn thông minh',12500000,'assets/images/pro2.jpg')">Thêm vào giỏ</button>
+                </div>
+            </div>
+
+            <!-- thêm card khác tương tự -->
+        </div>
+    </section>
+
+    <!-- Giới thiệu ngắn -->
+    <section class="section alt-bg">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h3>Về cuathongminh.vn</h3>
+                    <p>Chúng tôi cung cấp giải pháp cửa thông minh tích hợp cảm biến, vân tay, điều khiển qua app và hệ thống cảnh báo an ninh. Tập trung chất lượng, dịch vụ tận tâm.</p>
+                </div>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h4>Công nghệ cảm biến</h4>
+                        <p>Phản hồi nhanh, an toàn cho trẻ em.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Kết nối App</h4>
+                        <p>Mở/khóa từ xa, lịch sử truy cập.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Chống kẹt & An toàn</h4>
+                        <p>Cơ chế an toàn khi có vật cản.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tính năng nổi bật -->
+    <section id="features" class="section container">
+        <h2 class="section-title">Tính năng nổi bật</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h4>Vân tay</h4>
+                <p>Mở nhanh bằng vân tay, bảo mật cao.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Điều khiển App</h4>
+                <p>Từ điện thoại: mở/cài đặt/nhật ký.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Cảnh báo</h4>
+                <p>Cảnh báo đột nhập & lỗi hệ thống.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>cuathongminh.vn</h3>
+                <p>Công nghệ cửa thông minh hàng đầu.</p>
+            </div>
+            <div>
+                <h4>Liên hệ</h4>
+                <p>Hotline: 0343824207</p>
+                <p>Email: tung153277@gmail.com</p>
+            </div>
+            <div>
+<h4>Chính sách</h4>
+                <p><a href="#">Bảo hành</a></p>
+                <p><a href="#">Đổi trả</a></p>
+            </div>
+        </div>
+        <div class="copyright">© <span id="year"></span> cuathongminh.vn — Bản quyền thuộc về cuathongminh</div>
+    </footer>
+</body>
+</html>
